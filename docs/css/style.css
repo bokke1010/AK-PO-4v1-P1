@@ -3,6 +3,8 @@ body {
   background: #ffffff;
   font-family: 'Roboto Mono', monospace;
   font-size: 15px;
+  height: auto !important;
+  padding-bottom: 30% !important;
 }
 
 .menu ul {
@@ -12,7 +14,6 @@ body {
   padding: 0;
   display: flex;
   font-size: 19px;
-  /*display: block;*/
   z-index: 999;
 }
 
@@ -53,7 +54,7 @@ body {
   border: #cccccc 2px solid;
 }
 .main {
-  padding-left: 20%px;
+  padding-left: 20%;
 }
 
 /* WebGl things  */
