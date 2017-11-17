@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>title</title>
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webGL.json", {onProgress: UnityProgress});
+    </script>
   </head>
 
   <body>
@@ -25,7 +30,9 @@
     en <b>ondervoeding + kindersterfte</b>.
     <h2 id="C3">Kaart</h2>
     Druk op 1, 2, 3 en 4 om door de datasets te wisselen, en gebruik de muis en het scrollwiel om rond te kijken
-    <img src="https://d2ujflorbtfzji.cloudfront.net/package-screenshot/e896da25-f0e4-46ed-a7ca-4abee02eac57_scaled.jpg" alt="Mountain View">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    </div>
     <h2 id="C4">Verbanden</h2>
     Je kan zien dat landen met een hoger geboortecijfer vaak ook een hogere ondervoeding bij
     kinderen hebben wat in de eerste instantie opvallend is, omdat je zou verwachten dat mensen met
